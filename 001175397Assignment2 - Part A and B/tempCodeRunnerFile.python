@@ -1,0 +1,7 @@
+import pickle
+
+# Save user credentials as a tuple (username, password) to user_credentials.pkl
+credentials = ("admin", "admin")
+
+with open('user_credentials.pkl', 'wb') as file:
+    pickle.dump(credentials, file)
